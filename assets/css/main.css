@@ -94,7 +94,7 @@ input, select, textarea {
 		letter-spacing: -1px;
 	}
 
-	h1, h2, h3, h4 {
+	h1, h2, h3, h4  {
 		color: #007897;
 		font-weight: normal;
 	}
@@ -106,11 +106,18 @@ input, select, textarea {
 		font-size: 1.6em;
 		letter-spacing: -1px;
 		margin-bottom: 1em;
+		width: 100%;
 	}
 
 	h3, h4 {
 		color: #283121;
 		margin-bottom: 0.5em;
+	}
+
+	h5{
+		font-size: 40px;
+		color: #2F2E7D;
+		margin-bottom: 24px;
 	}
 
 	h3 {
@@ -1922,6 +1929,7 @@ input, select, textarea {
 				font-size: 1em;
 			}
 
+
 		/* Reusable */
 
 			ul.small-image-list li img {
@@ -2018,6 +2026,12 @@ input, select, textarea {
 		font-weight:bolder;
 	}
 
+	.sscontainer{
+		display: flex;
+		width: 100%;
+		justify-content: center;
+	}
+
 	.ssbox{
 		display: flex;
 		flex-direction: column;
@@ -2033,7 +2047,7 @@ input, select, textarea {
 		display:flex;
 		flex-direction: column;
 		flex:0;
-		width: 300px;
+		width: 400px;
 		margin: 24px;
 	}
 
