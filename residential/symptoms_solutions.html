@@ -42,20 +42,68 @@
 		<div id="main">
 			<div class="container">
 				<div class="row main-row">
-					<div class="col-8 col-12-small">
+					<div class="col-12 col-12-small">
 						<section>
 							<article class="blog-post">
 								<h2>Symptoms and Solutions</h2>
+								<h3>Problem: Diagonal cracking of walls</h3>
 
+								<div class="ssbox">
+									<img id="diagonal_symptoms" src="ss_images/diagonal_a.gif">
+									<div class="grid">
 
+										<div class="ssbutton"
+											onmouseover="imgChange('diagonal_a.gif', 'diagonal_symptoms')">
+											<div class="label" style="background-color: #871719;">A</div>
+											<div id="diagonalb" class="text">Direction of settled area is normally
+												perpendicular to the crack pattern.
+											</div>
+										</div>
 
+										<div class="ssbutton"
+											onmouseover="imgChange('diagonal_b.gif', 'diagonal_symptoms')">
+											<div class="label" style="background-color: #EB7E50;">B</div>
+											<div id="diagonalb" class="text">Windows and doors racked.</div>
+										</div>
 
+										<div class="ssbutton"
+											onmouseover="imgChange('diagonal_c.gif', 'diagonal_symptoms')">
+											<div class="label" style="background-color: #CEB081;">C</div>
+											<div id="diagonalb" class="text">Characteristic cracks.</div>
+										</div>
+
+										<div class="ssbutton"
+											onmouseover="imgChange('diagonal_d.gif', 'diagonal_symptoms')">
+											<div class="label" style="background-color: #626179;">D</div>
+											<div id="diagonalb" class="text">Floor may slope.</div>
+										</div>
+
+										<div class="ssbutton"
+											onmouseover="imgChange('diagonal_e.gif', 'diagonal_symptoms')">
+											<div class="label" style="background-color: #2F2E82;">E</div>
+											<div id="diagonalb" class="text">Settling foundation.</div>
+										</div>
+
+										<div class="ssbutton"
+											onmouseover="imgChange('diagonal_f.gif', 'diagonal_symptoms')">
+											<div class="label" style="background-color: #4F74B9;">F</div>
+											<div id="diagonalb" class="text">Weak soil zone.</div>
+										</div>
+
+									</div>
+								</div>
 							</article>
 						</section>
 					</div>
 				</div>
 			</div>
 		</div>
+
+		<script>
+			function imgChange(address, img_addess) {
+				document.getElementById(img_addess).src = "ss_images/" + address;
+			}
+		</script>
 
 		<!-- Footer -->
 		<div id="footer-wrapper">
