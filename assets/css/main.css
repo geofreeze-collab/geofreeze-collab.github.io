@@ -151,6 +151,7 @@ input, select, textarea {
 	}
 
 	ul {
+		margin-left: 36px;
 		padding: 0.25em 0 0 0;
 	}
 
@@ -2035,7 +2036,8 @@ input, select, textarea {
 	.ssbox{
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		margin: 40px;
+		flex:1;
 	}
 
 	.ssbox>img{
@@ -2046,9 +2048,8 @@ input, select, textarea {
 	.ssbox .grid{
 		display:flex;
 		flex-direction: column;
-		flex:0;
-		width: 400px;
-		margin: 24px;
+		width: 100%;
+		margin: 24px 0px;
 	}
 
 	.grid .ssbutton{
@@ -2080,4 +2081,11 @@ input, select, textarea {
 		background-color: black;
 		cursor: pointer;
 
+	}
+
+	.solutions {
+		background-color: #ffefc4;
+		border: 1px solid rgb(255, 190, 50);
+		outline-style: dotted;
+		padding: 36px;  
 	}
