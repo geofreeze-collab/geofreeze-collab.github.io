@@ -134,7 +134,8 @@ input, select, textarea {
 	}
 
 	p {
-		line-height: 1.8em;
+		width: 100%;
+		line-height: 1.2em;
 	}
 
 	strong {
@@ -1597,7 +1598,7 @@ input, select, textarea {
 /* Banner */
 
 	#banner-wrapper {
-		background: #c8d2bc url(images/bg1.png);
+		background: url(images/bg1.jpg);
 		padding: 2em 0;
 	}
 
@@ -1967,7 +1968,7 @@ input, select, textarea {
 		/* Banner */
 
 			#banner-wrapper {
-				background: #c8d2bc url(images/bg1.png);
+				background: #c8d2bc url(images/bg1.jpg);
 				padding: 20px 0;
 			}
 
@@ -2027,6 +2028,16 @@ input, select, textarea {
 		font-weight:bolder;
 	}
 
+	.nav-links{
+		margin-right: 64px;
+		line-height: 1em;
+	}
+
+	.nav-links .current{
+		color:#2F2E7D;
+  		text-decoration: none;
+	}
+
 	.sscontainer{
 		display: flex;
 		width: 100%;
@@ -2038,6 +2049,7 @@ input, select, textarea {
 		flex-direction: column;
 		margin: 40px;
 		flex:1;
+		max-width: 400px;
 	}
 
 	.ssbox>img{
@@ -2088,4 +2100,8 @@ input, select, textarea {
 		border: 1px solid rgb(255, 190, 50);
 		outline-style: dotted;
 		padding: 36px;  
+		display: flex; 
+		flex-direction: column; 
+		align-items: center; 
 	}
+
