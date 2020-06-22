@@ -85,7 +85,7 @@ mark {
 	}
 
 	h1, h2, h3, h4  {
-		color: #007897;
+		color: #ad391f;
 		font-weight: normal;
 	}
 
@@ -147,7 +147,7 @@ mark {
 	}
 
 	a {
-		color: #5d93a2;
+		color: #6a699f;
 		text-decoration: underline;
 	}
 
@@ -1513,7 +1513,7 @@ mark {
 		background-image: -webkit-linear-gradient(top, #181148, #2F2E7D);
 		background-image: -ms-linear-gradient(top, #181148, #2F2E7D);
 		background-image: linear-gradient(top, #181148, #2F2E7D);
-		background-color: #007294;
+		background-color: #2F2E7D;
 	}
 
 	#header {
@@ -2008,7 +2008,7 @@ mark {
 	}
 
 	.testimonial{
-		color: #1f3a52;
+		color: #a096ab;
 		border-bottom: 1px solid gray;	
 		padding: 18px;
 	}
