@@ -45,22 +45,99 @@
 					<div class="col-8 col-12-small">
 						<section>
 							<article class="blog-post">
-								<h2>Contact Us</h2>
 								<p>We are located at 3045 Colvin Street, Alexandria, VA 22314.</p>
 
 								<p>Telephone: 703-504-6120</p>
 								<p>Fax: 703-504-6124</p>
-								<div class="row main-row">
-									<footer class="controls">
-										<a href="http://html5up.net" class="button">Schedule Appointment with Engineer
-											for
-											Additional Information</a>
-									</footer>
-									<footer class="controls">
-										<a href="http://html5up.net" class="button">Complete
-											Satisfaction Report</a>
-									</footer>
-								</div>
+
+
+								<form class="input-container" action="https://formspree.io/xvowqdpo" method="POST">
+									<h2>Schedule an Appointment with Our Engineer for More Info</h2>
+									<div class="input-row">
+										<label>
+											Name:</label>
+										<input type="text" name="name">
+									</div>
+
+									<div class="input-row">
+										<label>
+											Your email:</label>
+										<input type="text" name="_replyto">
+									</div>
+
+									<div class="input-row">
+										<label>
+											Your phone number:</label>
+										<input type="number" name="phone">
+									</div>
+
+									<div class="header-line"> Client Address</div>
+
+									<div class="input-row">
+										<label>
+											Address:</label>
+										<input type="text" name="client_address">
+									</div>
+
+									<div class="input-row">
+										<label>
+											City:</label>
+										<input type="text" name="client_city">
+									</div>
+
+									<div class="input-row">
+										<label>
+											State:</label>
+										<input type="text" name="client_state">
+									</div>
+
+									<div class="input-row">
+										<label>
+											Zip Code:</label>
+										<input type="text" name="client_zip">
+									</div>
+
+									<div class="header-line"> Project Address</div>
+									<div class="input-row"> <input onChange="handleChange(this);" style="width: 50px;"
+											type="checkbox" id="scales" name="scales"><label>same
+											as client address</label>
+									</div>
+									<div class="input-row">
+										<label>
+											Address:</label>
+										<input type="text" name="project_address">
+									</div>
+
+									<div class="input-row">
+										<label>
+											City:</label>
+										<input type="text" name="project_city">
+									</div>
+
+									<div class="input-row">
+										<label>
+											State:</label>
+										<input type="text" name="project_state">
+									</div>
+
+									<div class="input-row">
+										<label>
+											Zip Code:</label>
+										<input type="text" name="project_zip">
+									</div>
+
+									<div class="header-line"> How can we help you?</div>
+
+									<div class="input-row">
+										<label>
+											Your message: </label>
+										<textarea name="message"></textarea>
+									</div>
+
+									<!-- your other form fields go here -->
+
+									<button class="button" type="submit">Send</button>
+								</form>
 
 							</article>
 						</section>
@@ -103,6 +180,23 @@
 	</div>
 
 	<!-- Scripts -->
+	<script>
+		function handleChange(checkbox) {
+			console.log($('[name="project_address"]').val())
+			let props = ["address", "city", "state", "zip"]
+			if (checkbox.checked == true) {
+				props.forEach(prop => {
+					$(`[name="project_${prop}"]`).val(" ");
+					$(`[name="project_${prop}"]`).prop("disabled", true);
+				});
+			}
+			else {
+				props.forEach(prop => {
+					$(`[name="project_${prop}"]`).prop("disabled", false);
+				});
+			}
+		}
+	</script>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>
 	<script src="assets/js/breakpoints.min.js"></script>
